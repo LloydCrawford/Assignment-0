@@ -1,19 +1,31 @@
+/* Heading fonts */
 h1 {
     font-family: 'Lobster', cursive;
 }
 
-.item {
-   text-align: 200px;
-   border-radius: 100%;
-   height: 240px;
-   width: 240px;
+h2{
+    font-family: 'Times New Roman', Times, serif;
 }
 
-img {
-    border-style: none;
+/* Images */
+.item {
+   text-align: 200px;
+   border-radius: 75%;
+   height: 240px;
+   width: 240px;
+   
+}
+
+.circles img{
     border-radius: 100%;
+    border-style: none;
     filter: grayscale(0);
 }
+img{
+    border-style: none;
+    filter: grayscale(0);
+}
+
 .container :hover{
     filter: grayscale(1);
     border-style: none;
@@ -24,14 +36,13 @@ img {
 }
 
 /*  selector circles credited to style shift at https://codepen.io/EvyatarDa/pen/waKXMd */
-div.selector a:before, div.selector a:after
-{
+div.selector a:before, div.selector a:after {
     position: absolute;
-    top: 100px;
+    top: 500px;
     left: 50%;
     width: 50px;
     height: 50px;
-    border: 4px solid ;
+    border: 4px solid red;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     border-radius: 50%;
     background: transparent;
@@ -39,29 +50,34 @@ div.selector a:before, div.selector a:after
     opacity: 0;
     transition: all 0.3s;
     z-index: -1;
+    margin: 0px 10px;
+    padding: 10px 10px;
 }
 
-div.selector a:after
-{
+div.selector a:after {
+    filter: grayscale(1);
     border-width: 2px;
     transition: all 0.4s;
 }
 
-div.selector a:hover:before
-{
+div.selector a:hover:before {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
-div.selector a:hover:after
-{
+div.selector a:hover:after {
+    filter: grayscale(1);
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
 
 
 
+/* Layout */
+
+
 
  body {
      text-align: center;
+     align-content: center;
  }
