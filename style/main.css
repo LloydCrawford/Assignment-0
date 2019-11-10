@@ -1,19 +1,23 @@
 /* Heading fonts */
 h1 {
     font-family: 'Lobster', cursive;
+    color: white;
 }
 
 h2{
     font-family: 'Times New Roman', Times, serif;
+   /* text-decoration: underline; */
+    color: rgb(255, 216, 88);
+    padding: 10px;
 }
+
 
 /* Images */
 .item {
-   text-align: 200px;
    border-radius: 75%;
    height: 240px;
-   width: 240px;
-   
+   padding-top: 20px;
+   padding: 40px;
 }
 
 .circles img{
@@ -25,6 +29,7 @@ h2{
 img{
     border-style: none;
     filter: grayscale(0);
+    
 }
 
 .container :hover{
@@ -75,10 +80,18 @@ div.selector a:hover:after {
 
 
 /* Layout */
+head{
+    background-color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
-
-
- body {
+body {
      text-align: center;
      align-content: center;
+     padding: 3em;
+ }
+
+ html{
+     background-color: lightslategrey;
  }
