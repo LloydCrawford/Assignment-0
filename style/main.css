@@ -6,10 +6,14 @@ h1 {
 
 h2{
     font-family: 'Times New Roman', Times, serif;
-     color: rgb(255, 216, 88);
-     padding: 10px;
+    color: white;
+    padding: 10px;
 }
 
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 216, 88);
+}
 h4{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 216, 88);
@@ -28,21 +32,22 @@ h4{
 .circles img{
     border-radius: 100%;
     border-style: none;
-    filter: grayscale(0);
 }
 
 img{
     border-style: none;
-    filter: grayscale(0);
     
 }
 
-.container1 :hover{
-    filter: grayscale(1);
+div.filter :hover{
+    filter: linear-gradient( 180deg,
+        rgb(248, 92, 92),
+         rgba(0, 0, 0, 0.692)
+    );
     border-style: none;
     border-radius: 100%;
     transition: background-size 0.3s ease;
-    filter: greyscale(1);
+    /*filter: greyscale(1);*/
     transition: background-size 0.3s ease; 
 }
 
@@ -62,7 +67,6 @@ div.container2 a {
     cursor: none;
 }
 
-
 div.selector a:before, div.selector a:after {
     position: absolute;
     left: 50%;
@@ -70,7 +74,7 @@ div.selector a:before, div.selector a:after {
     height: 40px;
     border: 4px solid red;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    border-radius: 50%;
+    border-radius: 60%;
     background: transparent;
     content: "";
     opacity: 0;
@@ -81,7 +85,7 @@ div.selector a:before, div.selector a:after {
 
 div.selector a:after {
     filter: grayscale(1);
-    border-width: 2px;
+    border-width: 3px;
     transition: all 0.4s;
 }
 
@@ -102,6 +106,35 @@ header{
     color: black;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    background: rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0),
+        rgba(0, 0, 0, 0.692)
+    );
+    color: white;
+    height: 900px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.background-vid{
+    position: relative;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
 }
 
 body {
