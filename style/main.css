@@ -40,8 +40,7 @@ div.filter :hover{
 }
 
 /*  original selector circles .CSS credited to style shift at https://codepen.io/EvyatarDa/pen/waKXMd */
-div.container
-{
+div.container{
     margin: 0 auto;
 	padding: 3em;
 	text-align: center;
@@ -138,19 +137,19 @@ header{
 
 body{
     text-align: center;
-    /*align-content: center;*/
+    align-content: center;
     text-size-adjust: 5px;
     height: 1300px;
     padding: 0px;
- }
+}
 
- footer{
+footer{
     padding: 20px;
     align-content: center;
     height: 200px;
- }
+}
 
- html{
+html{
     background-color: lightslategray;
     cursor: cell;
     border: 20px;
