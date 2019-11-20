@@ -8,18 +8,20 @@ h2{
     font-family: 'Times New Roman', Times, serif;
     color: white;
     padding: 10px;
+    padding-bottom: 20;
 }
 
 h3{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 216, 88);
+    padding: 30px;
+    size: 10px;
 }
 h4{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 216, 88);
     padding: 10px;
 }
-
 
 /* Images */
 .circles img{
@@ -97,7 +99,6 @@ div.selector a:hover:after {
         rgba(27, 27, 27, 0.692)
     );
     height: 750px;
-    /*margin-bottom: 50px;*/
     position: relative;
     overflow: hidden;
 }
