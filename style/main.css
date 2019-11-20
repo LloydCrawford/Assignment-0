@@ -1,19 +1,20 @@
 /* Heading fonts */
 h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Ibarra Real Nova', cursive;
     color: white;
 }
 
 h2{
     font-family: 'Times New Roman', Times, serif;
     color: white;
-    padding: 10px;
+    padding: 12px;
     padding-bottom: 20px;
+    text-decoration: overline underline;
 }
 
 h3{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 216, 88);
+    color: white;
     padding: 30px;
 }
 
@@ -57,8 +58,8 @@ div.container a {
 div.selector a:before, div.selector a:after {
     position: absolute;
     left: 50%;
-    width: 60px;
-    height: 60px;
+    width: 76px;
+    height: 76px;
     border: 4px solid red;
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     border-radius: 60%;
@@ -75,25 +76,25 @@ div.selector a:after {
     filter: grayscale(1);
     border-width: 3px;
     transition: all 0.4s;
-    margin-left: 40px;
+    margin-left: 43px;
 }
 
 div.selector a:hover:before {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1);
-    margin-left: 40px;
+    margin-left: 48px;
 }
 
 div.selector a:hover:after {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
-    margin-left: 40px;
+    margin-left: 48px;
     margin-top: 10px;
 }
 
 /* Background Video */
 
-.hero{
+.header-background{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,9 +138,9 @@ header{
 
 body{
     text-align: center;
-    align-content: center;
+    /*align-content: center;*/
     text-size-adjust: 5px;
-    height: 1500px;
+    height: 1300px;
     padding: 0px;
  }
 
