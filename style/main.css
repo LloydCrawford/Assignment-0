@@ -2,6 +2,7 @@
 h1 {
     font-family: 'Ibarra Real Nova', cursive;
     color: white;
+    text-decoration: underline;
 }
 
 h2{
@@ -39,6 +40,12 @@ div.filter :hover{
     transition: background-size 0.3s ease; 
 }
 
+div.item {
+    text-align: 200px;
+    border-radius: 100%;
+    height: 240px;
+ }
+
 /*  original selector circles .CSS credited to style shift at https://codepen.io/EvyatarDa/pen/waKXMd */
 div.container{
     margin: 0 auto;
@@ -59,7 +66,7 @@ div.selector a:before, div.selector a:after {
     left: 50%;
     width: 76px;
     height: 76px;
-    border: 4px solid red;
+    border: 4px solid rgba(255, 0, 0, 0.575);
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     border-radius: 60%;
     background: transparent;
@@ -92,7 +99,6 @@ div.selector a:hover:after {
 }
 
 /* Background Video */
-
 .header-background{
     display: flex;
     justify-content: center;
@@ -100,13 +106,13 @@ div.selector a:hover:after {
     background: rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(
         90deg,
-        rgba(252, 255, 85, 0.301),
-        rgba(27, 27, 27, 0.692)
+        rgba(241, 92, 92, 0.301),
+        rgba(63, 63, 63, 0.692)
     );
     height: 750px;
+    width: 100%;
     position: relative;
-    overflow: hidden;  
-    padding-top: 3rem;
+    overflow: hidden; 
 }
 
 .background-vid{
@@ -153,4 +159,9 @@ html{
     background-color: lightslategray;
     cursor: cell;
     border: 20px;
+    background-image: linear-gradient(
+        90deg,
+        rgba(241, 92, 92, 0.301),
+        rgba(63, 63, 63, 0.692)
+    );
  }
