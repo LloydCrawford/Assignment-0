@@ -16,10 +16,6 @@ h2{
     /*z-index: 0;*/
 }
 
-h2 a{
-    z-index: 3;
-}
-
 h3{
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -55,9 +51,13 @@ div.item {
 div.banner{
     background-color: black;
     width: 100%;
+    height: auto;
     border: 0px;
     margin: 0px;
     padding: 0;
+    border-radius: 10px;
+    outline: 5px;
+    outline-color: white;
 }
 
 /* Background Video */
@@ -113,7 +113,7 @@ nav{
         rgba(241, 92, 92, 0.301),
         rgba(63, 63, 63, 0.692)
     );
-  }
+}
 
 /* Portofolio Grid */
 
