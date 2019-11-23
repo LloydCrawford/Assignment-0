@@ -12,6 +12,7 @@ h2{
     padding-top: 60px;
     padding-bottom: 20px;
     text-decoration: overline underline;
+    font-size: 21px;
 }
 
 h3{
@@ -47,10 +48,18 @@ div.item {
     height: 240px;
  }
 
-/*  original selector circles .CSS credited to style shift at https://codepen.io/EvyatarDa/pen/waKXMd CSS Line 231-264*/
+div.banner{
+    background-color: black;
+    width: 100%;
+    border: 0px;
+    margin: 0px;
+    padding: 0;
+}
+
+/*  original selector .CSS credited to style shift at https://codepen.io/EvyatarDa/pen/waKXMd CSS Line 231-264*/
 div.container{
     margin: 0 auto;
-	padding: 3em;
+	padding: 3em 3em 3em 30px;
 	text-align: center;
 }
 
@@ -65,11 +74,10 @@ div.container a {
 div.selector a:before, div.selector a:after {
     position: absolute;
     left: 50%;
-    width: 76px;
+    width: 78px;
     height: 76px;
     border: 4px solid rgba(255, 0, 0, 0.575);
     transform: translateX(-50%) translateY(-50%) scale(0.8);
-    border-radius: 60%;
     background: transparent;
     content: "";
     opacity: 0;
@@ -140,6 +148,20 @@ nav{
     margin: 20px;
 }
 
+.downloads {
+    background-color: lightgray;
+    text-align: center;
+    display: inline-block;
+    box-shadow: grey;
+    padding: 12px 28px;
+    margin-left: 20px;
+    background-image: linear-gradient(
+        270deg,
+        rgba(241, 92, 92, 0.301),
+        rgba(63, 63, 63, 0.692)
+    );
+  }
+
 /* Portofolio Grid */
 
 .grid-image{
@@ -182,7 +204,6 @@ body{
     text-align: center;
     align-content: center;
     text-size-adjust: 5px;
-    height: 1300px;
     padding: 0px;
     margin-top: 20px;
 }
@@ -203,5 +224,4 @@ html{
         rgba(241, 92, 92, 0.301),
         rgba(63, 63, 63, 0.692)
     );
-    height: 1500px;
  }
